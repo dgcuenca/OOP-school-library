@@ -33,5 +33,4 @@ class Person < Nameable
     @rentals << rental
     book.rentals << rental
   end
-
 end
