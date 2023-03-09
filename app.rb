@@ -91,7 +91,6 @@ def list_all_books(books)
     rental
   end
   
-
   def list_all_rentals_by_id(rentals)
     puts 'Enter the ID of the person:'
     id = nil
