@@ -39,7 +39,7 @@ def list_all_books(books)
     when 2
       puts 'Specialization: '
       specialization = gets.chomp.to_s
-      teacher = Teacher.new(name: name, age: age, specialization: specialization)
+      teacher = Teacher.new(age, name, specialization)
       puts 'Teacher created successfully'
       people << teacher
     else
