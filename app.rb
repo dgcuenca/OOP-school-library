@@ -53,7 +53,7 @@ def list_all_books(books)
     title = gets.chomp.to_s
     puts 'Author: '
     author = gets.chomp.to_s
-    book = Book.new(title: title, author: author)
+    book = Book.new(title,author)
     books << book
     puts 'Book created successfully'
     book
