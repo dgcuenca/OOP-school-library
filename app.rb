@@ -21,7 +21,7 @@ def list_all_books(books)
     end
   end
   
-  def create_person
+  def create_person (people)
     puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]:'
     role = gets.chomp.to_i
     puts 'Age: '
@@ -33,15 +33,15 @@ def list_all_books(books)
     when 1
       puts 'Has parents permission? [Y/N]: '
       permission = gets.chomp.downcase == 'y'
-      student = Student.new(classroom: nil, age: age, name: name, parent_permission: permission)
+      student = Student.new(age, name, permission)
       puts 'Student created successfully'
-      student
+      people << student
     when 2
       puts 'Specialization: '
       specialization = gets.chomp.to_s
       teacher = Teacher.new(name: name, age: age, specialization: specialization)
       puts 'Teacher created successfully'
-      teacher
+      people << teacher
     else
       puts 'Invalid input'
       nil
