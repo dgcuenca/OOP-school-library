@@ -42,7 +42,7 @@ def run_app(books, people, rentals)
       exit_app
       break
     else
-      puts "Invalid input. Please enter a valid option."
+      puts 'Invalid input. Please enter a valid option.'
     end
   end
 end
