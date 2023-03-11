@@ -89,6 +89,7 @@ def list_all_books(books)
       date = gets.chomp
     
       rental = Rental.new(date, people[person_selected], books[book_selected])
+      puts rental
       rentals << rental
       puts 'Rental created successfully'
       rental
