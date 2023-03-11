@@ -34,6 +34,9 @@ def create_person(people)
     puts 'Has parents permission? [Y/N]: '
     permission = gets.chomp.downcase == 'y'
     student = Student.new(age, name, permission)
+    require 'pry'
+    binding.pry
+    puts student.length
     puts 'Student created successfully'
     people << student
   when 2

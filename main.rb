@@ -1,4 +1,5 @@
 require_relative './app'
+require 'pry'
 
 def main
   puts 'Welcome to School Library App!'
@@ -24,7 +25,7 @@ def run_app(books, people)
   loop do
     display_menu
     option = gets.chomp.to_i
-
+    binding.pry
     case option
     when 1
       list_all_books(books)
