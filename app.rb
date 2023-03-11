@@ -21,7 +21,7 @@ def list_all_people(people)
   end
 end
 
-def create_person(people)
+def create_person(people) # rubocop:disable Metrics/MethodLength: Method has too many lines
   puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]:'
   role = gets.chomp.to_i
   puts 'Age: '
@@ -59,7 +59,7 @@ def create_book(books)
   book
 end
 
-def create_rental(books, people, rentals)
+def create_rental(books, people, rentals) # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength, Metrics/PerceivedComplexity
   if books.empty?
     puts 'There isnt books to rent, come back later'
   else

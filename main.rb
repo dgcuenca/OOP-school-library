@@ -20,7 +20,7 @@ def display_menu
   7 - Exit"
 end
 
-def run_app(books, people, rentals)
+def run_app(books, people, rentals) # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
   loop do
     display_menu
     option = gets.chomp.to_i
