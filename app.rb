@@ -59,7 +59,7 @@ def create_book(books)
   book
 end
 
-def create_rental(books, people, rentals)
+def create_rental(books, people)
   if books.empty?
     puts 'There isnt books to rent, come back later'
   else
@@ -98,7 +98,7 @@ def create_rental(books, people, rentals)
   end
 end
 
-def list_all_rentals_by_id(rentals)
+def list_all_rentals_by_id()
   puts 'Enter the ID of the person:'
   id = nil
   loop do

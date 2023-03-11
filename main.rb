@@ -6,7 +6,7 @@ def main
   people = []
   rentals = []
 
-  run_app(books, people, rentals)
+  run_app(books, people)
 end
 
 def display_menu
@@ -20,7 +20,7 @@ def display_menu
   7 - Exit"
 end
 
-def run_app(books, people, rentals)
+def run_app(books, people)
   loop do
     display_menu
     option = gets.chomp.to_i
@@ -35,9 +35,9 @@ def run_app(books, people, rentals)
     when 4
       create_book(books)
     when 5
-      create_rental(books, people, rentals)
+      create_rental(books, people)
     when 6
-      list_all_rentals_by_id(rentals)
+      list_all_rentals_by_id()
     when 7
       exit_app
       break
